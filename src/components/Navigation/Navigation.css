@@ -1,0 +1,33 @@
+.nav-bar {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+}
+
+.nav-options {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5vw;
+}
+
+.nav-options a {
+  text-decoration: none;
+  line-height: 50px;
+  height: 50px;
+  background-color: rgb(28 31 28);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 22px;
+  padding: 5px 35px 5px 35px;
+}
+
+.nav-options a:hover {
+  background-color: white;
+  color: rgba(27, 26, 26, 0.868);
+  transition: 0.3s ease;
+}

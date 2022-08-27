@@ -1,0 +1,11 @@
+
+.logo img {
+  width: 35vh;
+}
+
+.logo {
+  border-radius: 5px;
+  padding: 28px;
+  margin-top: 6vh;
+  margin-left: 0.5vw;
+}
