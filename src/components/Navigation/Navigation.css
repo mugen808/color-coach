@@ -4,14 +4,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
+  position: fixed;
+  z-index: 1000;
 }
 
 .nav-options {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  padding-right: 5vw;
 }
 
 .nav-options a {
@@ -24,6 +24,7 @@
   border-radius: 30px;
   font-size: 22px;
   padding: 5px 35px 5px 35px;
+  margin-right: 5vw;
 }
 
 .nav-options a:hover {

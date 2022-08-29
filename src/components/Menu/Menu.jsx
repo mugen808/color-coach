@@ -1,12 +1,15 @@
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
+
 
 const Wrapper = styled.menu`
-  background-color: tomato;
+  background-color: #ff4747;
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow: none;
+  margin: 0;
+  z-index: 90;
+  position: fixed;
 `
 
 const MenuOptions = styled.a`
@@ -24,17 +27,34 @@ const OptionsWrapper = styled.div`
   flex-direction: column;
   padding: 20vh 0 0 20vw;
 `
+
+const Footer = styled.p`
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  justify-self: flex-end;
+  padding-top: 3vh;
+`
+
+const FooterLink = styled(MenuOptions)`
+  font-size: 22px;
+`
 const Menu = () => {
   return (
     <>
       <Wrapper>
         <OptionsWrapper>
-          <MenuOptions href="#">Training</MenuOptions>
+          <MenuOptions href="#">Method</MenuOptions>
           <MenuOptions href="#">Benefits</MenuOptions>
           <MenuOptions href="#">Services</MenuOptions>
-          <MenuOptions href="#">Clients and testimonials</MenuOptions>
-          <MenuOptions href="#">Contact</MenuOptions>
+          <MenuOptions href="#">Testimonials</MenuOptions>
+          <MenuOptions href="#">Contact Us</MenuOptions>
         </OptionsWrapper>
+        <Footer>Follow us on 
+          <FooterLink href="#"> Instagram </FooterLink>
+          and
+          <FooterLink href="#"> LinkedIn</FooterLink>
+        </Footer>
       </Wrapper>
     </>
   )

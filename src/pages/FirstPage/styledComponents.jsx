@@ -37,11 +37,13 @@ const Wrapper = styled.div`
   height: 100vh;
   width: 100vw;
   background-size: cover;
-  overflow: hidden;
   color: white;
   display: flex;
   justify-content: space-between;
   align-content: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: var(--background-blue);
 `
 
 const styles = {

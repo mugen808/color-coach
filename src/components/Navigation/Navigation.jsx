@@ -1,17 +1,27 @@
 import Logo from '../Logo/Logo'
 import './Navigation.css'
 import Menu from '../Menu/Menu'
+import { useState } from 'react'
 
 const Navigation = () => {
+  const [menuVisbility, setMenuVisibility] = useState(false);
+
+  const handleClick = () => {
+    setMenuVisibility(!menuVisbility);
+  }
+  
+
   return (
     <>
       <nav className="nav-bar">
         <Logo />
         <div className="nav-options">
-          <a href='#'>Menu</a>
+          <a href='#' onClick={handleClick}>Menu</a>
         </div>
       </nav>
-      <Menu></Menu>
+      {
+        menuVisbility ? <Menu /> : null
+      }
     </>
 
     

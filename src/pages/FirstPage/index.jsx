@@ -1,7 +1,7 @@
 import { styles, InformationButton, MainImage,
   TextSection, Wrapper
-} from './firstPageStyles';
-import mainImage from '../images/workshop/session4.jpg'
+} from './styledComponents';
+import mainImage from '../../images/workshop/session4.jpg'
 
 
 
